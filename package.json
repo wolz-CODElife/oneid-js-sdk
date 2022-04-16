@@ -1,0 +1,23 @@
+{
+  "name": "oneid",
+  "version": "1.0.0",
+  "description": "The OneID Javascript SDK",
+  "author": "",
+  "homepage": "https://docs.moralis.io",
+  "keywords": [
+    "SSO",
+    "api",
+    "identity"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MoralisWeb3/Moralis-JS-SDK.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "main": "index.js", 
+  "module": "index.js", 
+  "type": "module",
+  "license": "ISC"
+}
