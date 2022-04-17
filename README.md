@@ -4,6 +4,7 @@
 </p>
 
 [![npm](https://img.shields.io/npm/v/oneid-sdk)](https://www.npmjs.com/package/oneid-sdk)
+![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/wolz-codelife/oneid-js-sdk?label=Release)
 [![GitHub issues](https://img.shields.io/github/issues/wolz-CODElife/oneid-js-sdk)](https://github.com/wolz-CODElife/oneid-js-sdk/issues)
 [![GitHub forks](https://img.shields.io/github/forks/wolz-CODElife/oneid-js-sdk)](https://github.com/wolz-CODElife/oneid-js-sdk/network)
 [![GitHub license](https://img.shields.io/github/license/wolz-CODElife/oneid-js-sdk)](https://github.com/wolz-CODElife/oneid-js-sdk/blob/master/LICENSE)
