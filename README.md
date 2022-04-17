@@ -18,6 +18,16 @@ For more information on Moralis and its features, see [the website](https://onei
 The easiest way to integrate the OneID SDK into your JavaScript project is through the [npm module](https://npmjs.org/oneid).
 However, if you want to use a pre-compiled file, you can fetch it from [unpkg](https://unpkg.com). The development version is available at [https://unpkg.com/oneid/dist/oneid.js](https://unpkg.com/oneid/dist/oneid.js), and the minified production version is at [https://unpkg.com/oneid/dist/oneid.min.js](https://unpkg.com/oneid/dist/oneid.min.js).
 
+# Installation
+You can easily install this package from NPM by running the following command in your terrminal:
+```console
+$ npm install --save oneid
+```
+
+Or including the script in your HTML file via UNPKG:
+```HTML
+<script src="https://unpkg.com/oneid/dist/oneid.js"></script>
+```
 
 To use the npm modules for a browser based application, include it as you normally would:
 
@@ -27,6 +37,13 @@ const OneId = require('../oneid-sdk/index.js');
 // ES6
 import OneId from '../oneid-sdk/index.js'
 ```
+# 🎁Features
+The OneID JavaScript SDK currently offers the following features:
+- [Initialize SDK](#oneidstartoptions)
+- [Authenticate user](#oneidhandleauthoptions)
+- [Check is there an authenticated user](#oneidisauthenticated)
+- [Get the profile of the current user](#oneidcurrentuser)
+- [Log user out of the SDK](#oneidlogout)
 
 # 💻 Usage
 ## OneId.start(options)
@@ -94,6 +111,8 @@ window.addEventListener('load', () => {
 ## OneId.currentUser()
 To get the user data of the currently authenticated user, call the `currentUser()` method. This method returns a object containing the `user` object and `token`.
 
+### Example code:
+
 ```javascript
 window.addEventListener('load', () => {
     console.log(OneId.currentUser());
@@ -102,11 +121,28 @@ window.addEventListener('load', () => {
 
 | options | Data type | Description |
 | ------- | --------- | ----------- |
-| user  | `Object` | The user object contains the `id`,  |
-| token | `String` | |
+| user  | `Object` | The user object contains the `_id`, `email`, `oneId`(User's OneID ID), `profile`(User's OneID profile object), `username`  |
+| token | `String` | The authenticated string assign to each user for signing requests made to the OneID API |
 
+## OneId.Logout()
+You can use the `Logout()` method to unregister a user from the OneID instance on your application while the OneID SDK is still running and initialized but the user is disconnect from the OneID API.
 
+### Example code:
 
+```javascript
+logoutBtn.addEventListener('click', (e) => {
+    e.preventDefault()
+
+    OneId.Logout()
+})
+```
+
+# 🤝Support
+If you have any problems when using this SDK, please file a bug report on this repository by creating an issue and the development team will look into it as soon as possible.
 ## Typescript support
 
 Coming soon
+
+
+# ✔ License
+MIT &copy; [wolzcodelife.web.app](wolzcodelife.web.app) . GitHub [@wolz-codelife](https://github.com/wolz-codelife)
