@@ -46,10 +46,11 @@ import OneId from 'oneid-sdk'
 # 🎁Features
 The OneID JavaScript SDK currently offers the following features:
 - [Initialize SDK](#oneidstartoptions)
-- [Authenticate user](#oneidhandleauthoptions)
-- [Check is there an authenticated user](#oneidisauthenticated)
-- [Get the profile of the current user](#oneidcurrentuser)
-- [Log user out of the SDK](#oneidlogout)
+- SSO/ Authentication
+    - [Authenticate user](#oneidhandleauthoptions)
+    - [Check is there is an authenticated user](#oneidisauthenticated)
+    - [Get the profile of the current user](#oneidcurrentuser)
+    - [Log user out of the SDK](#oneidlogout)
 
 # 💻 Usage
 ## OneId.start(options)
@@ -71,7 +72,7 @@ window.addEventListener('load', () => {
 | options | Description |
 | ------- | ----------- |
 | apiKey  | This is a private key assigned to each developer's account. Generate one [here](https://business.oneidtech.com/developer/create-business-account).|
-| redirectURL | This a url of the `same-origin` with your application  ]
+| redirectURL | This a url of the `same-origin` with your application  |
 
 ## OneId.handleAuth(options)
 Using the SDK for user authentication is really simple. When you call the `handleAuth()` method, a window will pop up which processes the authentication and then returns you to the application.
