@@ -3,17 +3,16 @@
     <img width="101" height="101" src="https://www.gitbook.com/cdn-cgi/image/width=40,height=40,fit=contain,dpr=1,format=auto/https%3A%2F%2F3573057892-files.gitbook.io%2F~%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FWhuGOwO2oLcGtuN6fGER%252Ficon%252FTxjMr2HoTqTwjojE1eTb%252FoneId_logo_red.png%3Falt%3Dmedia%26token%3D5b348048-42a9-439d-a6d2-cc487fdc16ae" class="attachment-full size-full" alt="OneID" loading="lazy" /></a>
 </p>
 
+[![npm](https://img.shields.io/npm/v/oneid-sdk)](https://www.npmjs.com/package/oneid-sdk)
+[![GitHub issues](https://img.shields.io/github/issues/wolz-CODElife/oneid-js-sdk)](https://github.com/wolz-CODElife/oneid-js-sdk/issues)
+[![GitHub forks](https://img.shields.io/github/forks/wolz-CODElife/oneid-js-sdk)](https://github.com/wolz-CODElife/oneid-js-sdk/network)
+[![GitHub license](https://img.shields.io/github/license/wolz-CODElife/oneid-js-sdk)](https://github.com/wolz-CODElife/oneid-js-sdk/blob/master/LICENSE)
+
 <h2 align="center">OneID SDK for JavaScript</h2>
 
 <p align="center">
     A library that gives you access to OneID SSO services from your JavaScript app. <a href="https://business.oneidtech.com">Create A Developer Account Here</a>
 </p>
-
-<br>
-![npm](https://img.shields.io/npm/v/oneid-sdk)
-[![GitHub forks](https://img.shields.io/github/forks/wolz-CODElife/oneid-js-sdk)](https://github.com/wolz-CODElife/oneid-js-sdk/network)
-[![GitHub license](https://img.shields.io/github/license/wolz-CODElife/oneid-js-sdk)](https://github.com/wolz-CODElife/oneid-js-sdk/blob/master/LICENSE)
-[![GitHub issues](https://img.shields.io/github/issues/wolz-CODElife/oneid-js-sdk)](https://github.com/wolz-CODElife/oneid-js-sdk/issues)
 
 <br>
 
