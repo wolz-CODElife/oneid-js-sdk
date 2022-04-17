@@ -10,6 +10,12 @@
 </p>
 
 <br>
+![npm](https://img.shields.io/npm/v/oneid-sdk)
+[![GitHub forks](https://img.shields.io/github/forks/wolz-CODElife/oneid-js-sdk)](https://github.com/wolz-CODElife/oneid-js-sdk/network)
+[![GitHub license](https://img.shields.io/github/license/wolz-CODElife/oneid-js-sdk)](https://github.com/wolz-CODElife/oneid-js-sdk/blob/master/LICENSE)
+[![GitHub issues](https://img.shields.io/github/issues/wolz-CODElife/oneid-js-sdk)](https://github.com/wolz-CODElife/oneid-js-sdk/issues)
+
+<br>
 
 For more information on Moralis and its features, see [the website](https://oneidtech.com), [the Native SSO API docs](https://one-identity.gitbook.io/native-oneidtech-sso/).
 
@@ -21,7 +27,7 @@ However, if you want to use a pre-compiled file, you can fetch it from [unpkg](h
 # Installation
 You can easily install this package from NPM by running the following command in your terrminal:
 ```console
-$ npm install --save oneid-sdk
+$ npm i oneid-sdk
 ```
 
 Or including the script in your HTML file via UNPKG:
@@ -33,9 +39,9 @@ To use the npm modules for a browser based application, include it as you normal
 
 ```js
 // ES5 
-const OneId = require('../oneid-sdk/index.js');
+const OneId = require('oneid-sdk');
 // ES6
-import OneId from '../oneid-sdk/index.js'
+import OneId from 'oneid-sdk'
 ```
 # 🎁Features
 The OneID JavaScript SDK currently offers the following features:
