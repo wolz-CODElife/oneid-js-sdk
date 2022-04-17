@@ -145,4 +145,4 @@ Coming soon
 
 
 # ✔ License
-MIT &copy; [wolzcodelife.web.app](wolzcodelife.web.app) . GitHub [@wolz-codelife](https://github.com/wolz-codelife)
+MIT &copy; [wolzcodelife.web.app](https://wolzcodelife.web.app) . GitHub [@wolz-codelife](https://github.com/wolz-codelife)
