@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "The OneID Javascript SDK",
   "author": "",
-  "homepage": "https://docs.moralis.io",
+  "homepage": "https://github.com/wolz-CODElife/oneid-js-sdk.git",
   "keywords": [
     "SSO",
     "api",
@@ -11,7 +11,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MoralisWeb3/Moralis-JS-SDK.git"
+    "url": "git+https://github.com/wolz-CODElife/oneid-js-sdk.git"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
