@@ -1,8 +1,8 @@
 {
-  "name": "oneid",
+  "name": "oneid-sdk",
   "version": "1.0.0",
-  "description": "The OneID Javascript SDK",
-  "author": "",
+  "description": "OneID SDK for Javascript",
+  "author": "wolz-codelife",
   "homepage": "https://github.com/wolz-CODElife/oneid-js-sdk.git",
   "keywords": [
     "SSO",
