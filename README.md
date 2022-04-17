@@ -48,7 +48,7 @@ The OneID JavaScript SDK currently offers the following features:
 - [Initialize SDK](#oneidstartoptions)
 - SSO/ Authentication
     - [Authenticate user](#oneidhandleauthoptions)
-    - [Check is there is an authenticated user](#oneidisauthenticated)
+    - [Check if there is an authenticated user](#oneidisauthenticated)
     - [Get the profile of the current user](#oneidcurrentuser)
     - [Log user out of the SDK](#oneidlogout)
 
