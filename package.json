@@ -1,0 +1,23 @@
+{
+  "name": "oneid-sdk",
+  "version": "1.0.0",
+  "description": "OneID SDK for Javascript",
+  "author": "wolz-codelife",
+  "homepage": "https://github.com/wolz-CODElife/oneid-js-sdk.git",
+  "keywords": [
+    "SSO",
+    "api",
+    "identity"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wolz-CODElife/oneid-js-sdk.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "main": "index.js", 
+  "module": "index.js", 
+  "type": "module",
+  "license": "MIT"
+}
