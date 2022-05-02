@@ -40,10 +40,11 @@ import OneId from '../oneid-sdk/index.js'
 # 🎁Features
 The OneID JavaScript SDK currently offers the following features:
 - [Initialize SDK](#oneidstartoptions)
-- [Authenticate user](#oneidhandleauthoptions)
-- [Check is there an authenticated user](#oneidisauthenticated)
-- [Get the profile of the current user](#oneidcurrentuser)
-- [Log user out of the SDK](#oneidlogout)
+- SSO/ Authentication
+    - [Authenticate user](#oneidhandleauthoptions)
+    - [Check if there is an authenticated user](#oneidisauthenticated)
+    - [Get the profile of the current user](#oneidcurrentuser)
+    - [Log user out of the SDK](#oneidlogout)
 
 # 💻 Usage
 ## OneId.start(options)
