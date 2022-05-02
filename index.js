@@ -14,20 +14,20 @@ class OneId extends SSO {
      * Call this method to initialize all OneID instances.
      *
      * @param {object} options Your OneID API key and Redirect URL. 
-     * @example OneId.start({ apiKey, redirectURL })
+     * @example OneId.start({ apiKey, siteDomain })
      * @static
      */
     static async start(options) {
-        const { apiKey, redirectURL } = options;
-        if (!redirectURL) {
-        throw new Error(`OneId.start failed: redirectURL is required`);
+        const { apiKey, siteDomain } = options;
+        if (!siteDomain) {
+        throw new Error(`OneId.start failed: siteDomain is required`);
         }
         if (!apiKey) {
         throw new Error(`OneId.start failed: apiKey is required`);
         }
         
-        this.initialize({ apiKey, redirectURL , OneId });
-        this.redirectURL = redirectURL
+        this.initialize({ apiKey, siteDomain , OneId });
+        this.siteDomain = siteDomain
         this.apiKey = apiKey
     }
 }

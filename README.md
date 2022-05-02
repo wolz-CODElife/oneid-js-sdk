@@ -3,12 +3,6 @@
     <img width="101" height="101" src="https://www.gitbook.com/cdn-cgi/image/width=40,height=40,fit=contain,dpr=1,format=auto/https%3A%2F%2F3573057892-files.gitbook.io%2F~%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FWhuGOwO2oLcGtuN6fGER%252Ficon%252FTxjMr2HoTqTwjojE1eTb%252FoneId_logo_red.png%3Falt%3Dmedia%26token%3D5b348048-42a9-439d-a6d2-cc487fdc16ae" class="attachment-full size-full" alt="OneID" loading="lazy" /></a>
 </p>
 
-[![npm](https://img.shields.io/npm/v/oneid-sdk)](https://www.npmjs.com/package/oneid-sdk)
-![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/wolz-codelife/oneid-js-sdk?label=Release)
-[![GitHub issues](https://img.shields.io/github/issues/wolz-CODElife/oneid-js-sdk)](https://github.com/wolz-CODElife/oneid-js-sdk/issues)
-[![GitHub forks](https://img.shields.io/github/forks/wolz-CODElife/oneid-js-sdk)](https://github.com/wolz-CODElife/oneid-js-sdk/network)
-[![GitHub license](https://img.shields.io/github/license/wolz-CODElife/oneid-js-sdk)](https://github.com/wolz-CODElife/oneid-js-sdk/blob/master/LICENSE)
-
 <h2 align="center">OneID SDK for JavaScript</h2>
 
 <p align="center">
@@ -22,35 +16,34 @@ For more information on Moralis and its features, see [the website](https://onei
 # 🚀 Getting Started
 
 The easiest way to integrate the OneID SDK into your JavaScript project is through the [npm module](https://npmjs.org/oneid-sdk).
-However, if you want to use a pre-compiled file, you can fetch it from [unpkg](https://unpkg.com). The development version is available at [https://unpkg.com/oneid-sdk](https://unpkg.com/oneid-sdk).
+However, if you want to use a pre-compiled file, you can fetch it from [unpkg](https://unpkg.com). The development version is available at [https://unpkg.com/oneid-sdk/dist/oneid-sdk.js](https://unpkg.com/oneid-sdk/dist/oneid-sdk.js), and the minified production version is at [https://unpkg.com/oneid-sdk/dist/oneid-sdk.min.js](https://unpkg.com/oneid-sdk/dist/oneid-sdk.min.js).
 
 # Installation
 You can easily install this package from NPM by running the following command in your terrminal:
 ```console
-$ npm i oneid-sdk
+$ npm install --save oneid-sdk
 ```
 
 Or including the script in your HTML file via UNPKG:
 ```HTML
-<script src="https://unpkg.com/oneid-sdk"></script>
+<script src="https://unpkg.com/oneid-sdk/dist/oneid-sdk.js"></script>
 ```
 
 To use the npm modules for a browser based application, include it as you normally would:
 
 ```js
 // ES5 
-const OneId = require('oneid-sdk');
+const OneId = require('../oneid-sdk/index.js');
 // ES6
-import OneId from 'oneid-sdk'
+import OneId from '../oneid-sdk/index.js'
 ```
 # 🎁Features
 The OneID JavaScript SDK currently offers the following features:
 - [Initialize SDK](#oneidstartoptions)
-- SSO/ Authentication
-    - [Authenticate user](#oneidhandleauthoptions)
-    - [Check is there is an authenticated user](#oneidisauthenticated)
-    - [Get the profile of the current user](#oneidcurrentuser)
-    - [Log user out of the SDK](#oneidlogout)
+- [Authenticate user](#oneidhandleauthoptions)
+- [Check is there an authenticated user](#oneidisauthenticated)
+- [Get the profile of the current user](#oneidcurrentuser)
+- [Log user out of the SDK](#oneidlogout)
 
 # 💻 Usage
 ## OneId.start(options)
@@ -62,7 +55,7 @@ To get the SDK started, use the `start()` method as follows:
 ```javascript
 const options = {
     apiKey: "YOUR_API_KEY",
-    redirectURL: "YOUR_REDIRECT_URL"
+    siteDomain: "YOUR_SITE_DOMAIN starting with http:// or https://"
 }
 window.addEventListener('load', () => {
     OneId.start(options)
@@ -72,7 +65,7 @@ window.addEventListener('load', () => {
 | options | Description |
 | ------- | ----------- |
 | apiKey  | This is a private key assigned to each developer's account. Generate one [here](https://business.oneidtech.com/developer/create-business-account).|
-| redirectURL | This a url of the `same-origin` with your application  |
+| siteDomain | This a url of the `same-origin` with your application starting with `http://` or `https://`  ]
 
 ## OneId.handleAuth(options)
 Using the SDK for user authentication is really simple. When you call the `handleAuth()` method, a window will pop up which processes the authentication and then returns you to the application.
@@ -152,4 +145,4 @@ Coming soon
 
 
 # ✔ License
-MIT &copy; [wolzcodelife.web.app](https://wolzcodelife.web.app) . GitHub [@wolz-codelife](https://github.com/wolz-codelife)
+MIT &copy; [wolzcodelife.web.app](wolzcodelife.web.app) . GitHub [@wolz-codelife](https://github.com/wolz-codelife)
