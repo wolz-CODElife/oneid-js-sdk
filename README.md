@@ -66,7 +66,7 @@ window.addEventListener('load', () => {
 | options | Description |
 | ------- | ----------- |
 | apiKey  | This is a private key assigned to each developer's account. Generate one [here](https://business.oneidtech.com/developer/create-business-account).|
-| siteDomain | This a url of the `same-origin` with your application starting with `http://` or `https://`  ]
+| siteDomain | This a url of the `same-origin` with your application starting with `http://` or `https://`| 
 
 ## OneId.handleAuth(options)
 Using the SDK for user authentication is really simple. When you call the `handleAuth()` method, a window will pop up which processes the authentication and then returns you to the application.
