@@ -26,16 +26,16 @@ $ npm install --save oneid-sdk
 
 Or including the script in your HTML file via UNPKG:
 ```HTML
-<script src="https://unpkg.com/oneid-sdk/dist/oneid-sdk.js"></script>
+<script src="https://unpkg.com/oneid-sdk@1.0.1/index.js"></script>
 ```
 
 To use the npm modules for a browser based application, include it as you normally would:
 
 ```js
-// ES5 
-const OneId = require('../oneid-sdk/index.js');
-// ES6
-import OneId from '../oneid-sdk/index.js'
+// ES5 with module loaders/bundlers 
+const OneId = require('oneid-sdk');
+// ES6 with module loaders/bundlers
+import OneId from 'oneid-sdk'
 ```
 # 🎁Features
 The OneID JavaScript SDK currently offers the following features:
