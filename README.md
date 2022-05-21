@@ -11,7 +11,7 @@
 
 <br>
 
-For more information on Moralis and its features, see [the website](https://oneidtech.com), [the Native SSO API docs](https://one-identity.gitbook.io/native-oneidtech-sso/).
+For more information on OneID and its features, see [the website](https://oneidtech.com), [the Native SSO API docs](https://one-identity.gitbook.io/native-oneidtech-sso/).
 
 # 🚀 Getting Started
 
