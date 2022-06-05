@@ -26,7 +26,7 @@ $ npm install --save oneid-sdk
 
 Or including the script in your HTML file via UNPKG:
 ```HTML
-<script src="https://unpkg.com/oneid-sdk@1.0.3/index.js"></script>
+<script src="https://unpkg.com/oneid-sdk@1.0.4/index.js"></script>
 ```
 
 To use the npm modules for a browser based application, include it as you normally would:
