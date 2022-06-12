@@ -1,11 +1,11 @@
-<p align="center">
+<p style="text-align: center;">
     <a href="https://oneidtech.com">
-    <img width="101" height="101" src="https://www.gitbook.com/cdn-cgi/image/width=40,height=40,fit=contain,dpr=1,format=auto/https%3A%2F%2F3573057892-files.gitbook.io%2F~%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FWhuGOwO2oLcGtuN6fGER%252Ficon%252FTxjMr2HoTqTwjojE1eTb%252FoneId_logo_red.png%3Falt%3Dmedia%26token%3D5b348048-42a9-439d-a6d2-cc487fdc16ae" class="attachment-full size-full" alt="OneID" loading="lazy" /></a>
+    <img width="101" height="101" src="https://www.gitbook.com/cdn-cgi/image/width=40,height=40,fit=contain,dpr=1,format=auto/https%3A%2F%2F3573057892-files.gitbook.io%2F~%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FWhuGOwO2oLcGtuN6fGER%252Ficon%252FTxjMr2HoTqTwjojE1eTb%252FoneId_logo_red.png%3Falt%3Dmedia%26token%3D5b348048-42a9-439d-a6d2-cc487fdc16ae" alt="OneID" loading="lazy" /></a>
 </p>
 
-<h2 align="center">OneID SDK for JavaScript</h2>
+<h2 style="text-align: center;">OneID SDK for JavaScript</h2>
 
-<p align="center">
+<p style="text-align: center;">
     A library that gives you access to OneID SSO services from your JavaScript app. <a href="https://business.oneidtech.com">Create A Developer Account Here</a>
 </p>
 
@@ -26,7 +26,7 @@ $ npm install --save oneid-sdk
 
 Or including the script in your HTML file via UNPKG:
 ```HTML
-<script src="https://unpkg.com/oneid-sdk@1.0.4/index.js"></script>
+<script src="https://unpkg.com/oneid-sdk@1.0.5/index.js"></script>
 ```
 
 To use the npm modules for a browser based application, include it as you normally would:

@@ -1,7 +1,6 @@
 import { openSignInWindow } from "./utils.js"
 
 const baseURL = "https://oneidtech.com/auth"
-
 /**
 * 
 * Automatically generated code, via SSO.js
@@ -13,9 +12,9 @@ class SSO {
     /**
     *  The default URL string for send requests to OneID API
     */
-    static get baseURL() {
-        return baseURL
-    }
+   static get baseURL() {
+    return baseURL
+   }
 
     /**
     * 
@@ -25,17 +24,13 @@ class SSO {
     * @param {string} options.apiKey
     * @param {string} options.siteDomain
     */
-    static initialize({ apiKey, siteDomain , OneId = null}) {
+    static initialize({ apiKey, siteDomain }) {
         if(!siteDomain || !apiKey) {
             throw new Error("SSO.initialize failed: initialize with apiKey or siteDomain")
         }
         if(siteDomain) this.siteDomain = siteDomain
         if(apiKey) this.apiKey = apiKey
-
-        this.OneId = OneId
     }
-
-
 
     /**
     * 
@@ -44,7 +39,7 @@ class SSO {
     * @param {object} options - An object containing `type` and `scope` 
     * @param {("login" | "signup")} options.type
     * @param {("profile" | "basic" | "advance")} options.scope
-    * @returns {{token: string, user: object}} User - Object of current user 
+     * @returns {{token: string, user: object}} User - Object of current user 
     */
     static async handleAuth({type = "login", scope = "profile"}) {
         if(!this.siteDomain || !this.apiKey) {
