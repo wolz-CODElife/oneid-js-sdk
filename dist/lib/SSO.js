@@ -1,5 +1,7 @@
 import { openSignInWindow } from "./utils.js"
 
+const baseURL = "https://oneidtech.com/auth"
+
 /**
 * 
 * Automatically generated code, via SSO.js
@@ -11,11 +13,9 @@ class SSO {
     /**
     *  The default URL string for send requests to OneID API
     */
-    static baseURL = "https://oneidtech.com/auth"
-
-
-
-
+    static get baseURL() {
+        return baseURL
+    }
 
     /**
     * 
@@ -37,12 +37,6 @@ class SSO {
 
 
 
-
-    /**
-     * @typedef AuthResponse
-     * @param {object} - an object containing user properties
-     */
-
     /**
     * 
     * Call this method to handle authentication with OneId.
@@ -50,7 +44,7 @@ class SSO {
     * @param {object} options - An object containing `type` and `scope` 
     * @param {("login" | "signup")} options.type
     * @param {("profile" | "basic" | "advance")} options.scope
-    * @returns {Promise<AuthResponse|Error>}
+    * @returns {{token: string, user: object}} User - Object of current user 
     */
     static async handleAuth({type = "login", scope = "profile"}) {
         if(!this.siteDomain || !this.apiKey) {
