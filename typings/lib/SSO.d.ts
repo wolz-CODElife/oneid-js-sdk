@@ -10,7 +10,7 @@ declare class SSO {
     /**
     *  The default URL string for send requests to OneID API
     */
-    static baseURL: string;
+    static get baseURL(): string;
     /**
     *
     * Call this method to initialize all OneId instances.
@@ -19,14 +19,10 @@ declare class SSO {
     * @param {string} options.apiKey
     * @param {string} options.siteDomain
     */
-    static initialize({ apiKey, siteDomain, OneId }: {
+    static initialize({ apiKey, siteDomain }: {
         apiKey: string;
         siteDomain: string;
     }): void;
-    /**
-     * @typedef AuthResponse
-     * @param {object} - an object containing user properties
-     */
     /**
     *
     * Call this method to handle authentication with OneId.
@@ -34,12 +30,15 @@ declare class SSO {
     * @param {object} options - An object containing `type` and `scope`
     * @param {("login" | "signup")} options.type
     * @param {("profile" | "basic" | "advance")} options.scope
-    * @returns {Promise<AuthResponse|Error>}
+     * @returns {{token: string, user: object}} User - Object of current user
     */
     static handleAuth({ type, scope }: {
         type: ("login" | "signup");
         scope: ("profile" | "basic" | "advance");
-    }): Promise<any>;
+    }): {
+        token: string;
+        user: object;
+    };
     /**
      * Call this method to check if user's token or object is not undefined
      *

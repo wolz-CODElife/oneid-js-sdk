@@ -1,6 +1,6 @@
 {
   "name": "oneid-sdk",
-  "version": "1.0.4",
+  "version": "1.0.7",
   "description": "OneID SDK for Javascript",
   "author": "wolz-codelife",
   "homepage": "https://github.com/wolz-CODElife/oneid-js-sdk.git",
@@ -18,7 +18,7 @@
   },
   "main": "./dist/index.js",
   "module": "./dist/index.js",
-  "type": "module",
+  "types": "./typings",
   "license": "MIT",
   "devDependencies": {
     "typescript": "^4.7.3"
