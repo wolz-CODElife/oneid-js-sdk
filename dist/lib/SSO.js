@@ -1,6 +1,6 @@
 import { openSignInWindow } from "./utils.js"
 
-const baseURL = "https://auth.oneidtech.com"
+const baseURL = "https://auth.oneidtech.com/auth"
 /**
 * 
 * Automatically generated code, via SSO.js
@@ -46,7 +46,7 @@ class SSO {
             throw new Error("OneId is not initialized: initialize with apiKey or siteDomain first")
         }
         if(this.siteDomain && this.apiKey) {
-            const url = `https://oneidtech.com/auth?type=${type}&scope=${scope}&callback=${this.siteDomain}&api_key=${this.apiKey}`
+            const url = `${baseURL}?type=${type}&scope=${scope}&callback=${this.siteDomain}&api_key=${this.apiKey}`
             openSignInWindow(url, "OneID_auth_popup_window")
             //Listen to message from pop window
             return window.addEventListener("message", (event) => {
