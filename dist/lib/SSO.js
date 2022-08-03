@@ -1,6 +1,6 @@
 import { openSignInWindow } from "./utils.js"
 
-const baseURL = "https://oneidtech.com/auth"
+const baseURL = "https://auth.oneidtech.com"
 /**
 * 
 * Automatically generated code, via SSO.js

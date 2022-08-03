@@ -18,7 +18,7 @@ For more information on OneID and its features, see [the website](https://oneidt
 The easiest way to integrate the OneID SDK into your JavaScript project is through the [npm module](https://npmjs.org/oneid-sdk).
 However, if you want to use a pre-compiled file, you can fetch it from [unpkg](https://unpkg.com). The development version is available at [https://unpkg.com/oneid-sdk/dist/oneid-sdk.js](https://unpkg.com/oneid-sdk/dist/oneid-sdk.js), and the minified production version is at [https://unpkg.com/oneid-sdk/dist/oneid-sdk.min.js](https://unpkg.com/oneid-sdk/dist/oneid-sdk.min.js).
 
-# Installation
+# 📲 Installation
 You can easily install this package from NPM by running the following command in your terrminal:
 ```console
 $ npm install --save oneid-sdk
@@ -140,9 +140,9 @@ logoutBtn.addEventListener('click', (e) => {
 
 # 🤝Support
 If you have any problems when using this SDK, please file a bug report on this repository by creating an issue and the development team will look into it as soon as possible.
-## Typescript support
 
-Coming soon
+## ⌨ Typescript
+This library offers first-class Typescript support.
 
 
 # ✔ License
