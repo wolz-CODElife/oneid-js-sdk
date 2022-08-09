@@ -1,6 +1,6 @@
 <p style="text-align: center;">
     <a href="https://oneidtech.com">
-    <img width="101" height="101" src="https://www.gitbook.com/cdn-cgi/image/width=40,height=40,fit=contain,dpr=1,format=auto/https%3A%2F%2F3573057892-files.gitbook.io%2F~%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FWhuGOwO2oLcGtuN6fGER%252Ficon%252FTxjMr2HoTqTwjojE1eTb%252FoneId_logo_red.png%3Falt%3Dmedia%26token%3D5b348048-42a9-439d-a6d2-cc487fdc16ae" alt="OneID" loading="lazy" /></a>
+    <img width="101" height="101" src="https://i.postimg.cc/XYwGw2WQ/One-ID-logo-Icon-PNG.png" alt="OneID" loading="lazy" /></a>
 </p>
 
 <h2 style="text-align: center;">OneID SDK for JavaScript</h2>
