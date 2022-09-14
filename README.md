@@ -3,20 +3,22 @@
     <img width="101" height="101" src="https://i.postimg.cc/XYwGw2WQ/One-ID-logo-Icon-PNG.png" alt="OneID" loading="lazy" /></a>
 </p>
 
-<h2 style="text-align: center;">OneID SDK for JavaScript</h2>
+# OneID SDK for JavaScript
+
+[![NPM](https://img.shields.io/npm/v/oneid-sdk.svg)](https://www.npmjs.com/package/oneid-sdk)
 
 <p style="text-align: center;">
-    A library that gives you access to OneID SSO services from your JavaScript app. <a href="https://business.oneidtech.com">Create A Developer Account Here</a>
+    A library that gives you access to OneID SSO services from your JavaScript app. <a href="https://console.oneidtech.com">Create A Developer Account Here</a>
 </p>
 
 <br>
 
-For more information on OneID and its features, see [the website](https://oneidtech.com), [the Native SSO API docs](https://one-identity.gitbook.io/native-oneidtech-sso/).
+For more information on OneID and its features, see [the documentation](https://developer.oneidtech.com).
 
 # 🚀 Getting Started
 
 The easiest way to integrate the OneID SDK into your JavaScript project is through the [npm module](https://npmjs.org/oneid-sdk).
-However, if you want to use a pre-compiled file, you can fetch it from [unpkg](https://unpkg.com). The development version is available at [https://unpkg.com/oneid-sdk/dist/oneid-sdk.js](https://unpkg.com/oneid-sdk/dist/oneid-sdk.js), and the minified production version is at [https://unpkg.com/oneid-sdk/dist/oneid-sdk.min.js](https://unpkg.com/oneid-sdk/dist/oneid-sdk.min.js).
+However, if you want to use a pre-compiled file, you can fetch it from [unpkg](https://unpkg.com). The development version is available at [https://unpkg.com/browse/oneid-sdk@1.0.9/src/index.ts](https://unpkg.com/browse/oneid-sdk@1.0.9/src/index.ts).
 
 # 📲 Installation
 You can easily install this package from NPM by running the following command in your terrminal:
@@ -26,7 +28,7 @@ $ npm install --save oneid-sdk
 
 Or including the script in your HTML file via UNPKG:
 ```HTML
-<script src="https://unpkg.com/oneid-sdk@1.0.8/index.js"></script>
+<script src="https://unpkg.com/browse/oneid-sdk@1.0.9/src/index.ts"></script>
 ```
 
 To use the npm modules for a browser based application, include it as you normally would:
