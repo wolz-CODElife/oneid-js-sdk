@@ -1,13 +1,6 @@
-export default OneId;
-/**
- * Contains all OneID API classes and functions.
- *
- * @static
- * @global
- * @class
- * @hideconstructor
- */
+import SSO from "./lib/SSO";
 declare class OneId extends SSO {
+    static OneId: OneId;
     /**
      * Call this method to initialize all OneID instances.
      *
@@ -15,12 +8,16 @@ declare class OneId extends SSO {
      * @example OneId.start({ apiKey, siteDomain })
      * @static
      */
-    static start(options: object): Promise<void>;
+    static start(options: {
+        /**
+         * Your OneID API key
+         */
+        apiKey: string;
+        /**
+         * Your site domain
+         */
+        siteDomain: string;
+    }): void;
 }
-declare namespace OneId {
-    export const siteDomain: any;
-    export const apiKey: any;
-    export { OneId };
-}
-import SSO from "./lib/SSO.js";
+export default OneId;
 //# sourceMappingURL=index.d.ts.map
