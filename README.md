@@ -72,20 +72,16 @@ window.addEventListener('load', () => {
 
 ## OneId.handleAuth(options)
 Using the SDK for user authentication is really simple. When you call the `handleAuth()` method, a window will pop up which processes the authentication and then returns you to the application.
-The user's profile and token are stored using `localstorage`.
+<!-- The user's profile and token are stored using `localstorage`. -->
 
 ### Example code:
 
 ```javascript
-const options = {
-    type: "login",
-    scope: "profile"
-}
 
 btn.addEventListener('click', (e) => {
     e.preventDefault()
 
-    OneId.handleAuth(options).then((data) => {
+    OneId.handleAuth().then((data) => {
         console.log(data);
     }).catch(error => {
         console.log(error);
@@ -93,7 +89,7 @@ btn.addEventListener('click', (e) => {
 })
 ```
 
-| options | Description |
+<!-- | options | Description |
 | ------- | ----------- |
 | type  | OneId allows 2 types of authentication for now: `login` and `signup` |
 | scope | OneId provides user data in 3 scopes: `profile`, `basic` and `advance`  |
@@ -138,7 +134,7 @@ logoutBtn.addEventListener('click', (e) => {
 
     OneId.Logout()
 })
-```
+``` -->
 
 # 🤝Support
 If you have any problems when using this SDK, please file a bug report on this repository by creating an issue and the development team will look into it as soon as possible.

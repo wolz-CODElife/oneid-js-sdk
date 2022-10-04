@@ -59,7 +59,9 @@ const streamMessage = (popup: Window, url) => {
           let user = JSON.parse(userString || "null");
           let data = { token, user };
           popup.opener.postMessage(JSON.stringify(data), "*");
-          popup.close();
+          setTimeout(() => {
+            popup.close();
+          }, 301);
         } else {
           requestAnimationFrame(streamer);
         }
