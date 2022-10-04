@@ -16,17 +16,21 @@ export const openSignInWindow = (url, name) => {
     if (windowObjectReference === null || windowObjectReference.closed) {
         /* if the pointer to the window object in memory does not exist
             or if such pointer exists but the window was closed */
-        windowObjectReference = window.open(url, name, strWindowFeatures);
-        streamMessage(windowObjectReference, url);
+        setTimeout(() => {
+            windowObjectReference = window.open(url, name, strWindowFeatures);
+            streamMessage(windowObjectReference, url);
+        }, 0);
     }
     else {
         if (previousUrl !== url) {
             /* if the resource to load is different,
                   then we load it in the already opened secondary window and then
                   we bring such window back on top/in front of its parent window. */
-            windowObjectReference = window.open(url, name, strWindowFeatures);
-            streamMessage(windowObjectReference, url);
-            windowObjectReference === null || windowObjectReference === void 0 ? void 0 : windowObjectReference.focus();
+            setTimeout(() => {
+                windowObjectReference = window.open(url, name, strWindowFeatures);
+                streamMessage(windowObjectReference, url);
+                windowObjectReference === null || windowObjectReference === void 0 ? void 0 : windowObjectReference.focus();
+            }, 0);
         }
         else {
             /* else the window reference must exist and the window
@@ -53,7 +57,9 @@ const streamMessage = (popup, url) => {
                     let user = JSON.parse(userString || "null");
                     let data = { token, user };
                     popup.opener.postMessage(JSON.stringify(data), "*");
-                    popup.close();
+                    setTimeout(() => {
+                        popup.close();
+                    }, 301);
                 }
                 else {
                     requestAnimationFrame(streamer);
