@@ -1,5 +1,5 @@
 import SSO from "./lib/SSO";
-
+export * from "./v2";
 class OneId extends SSO {
   static OneId: OneId;
 

@@ -1,4 +1,5 @@
 import SSO from "./lib/SSO";
+export * from "./v2";
 class OneId extends SSO {
     /**
      * Call this method to initialize all OneID instances.
