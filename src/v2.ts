@@ -26,7 +26,7 @@ export function handleAuth(): Promise<{ token: string; user: User }> {
   const y = window.top.outerHeight / 2 + window.top.screenY - height / 2;
   const x = window.top.outerWidth / 2 + window.top.screenX - width / 2;
   const w = window.open(
-    `${baseURL}/auth?type=login&callback=${window.location.origin}&api_key=${OneIDV2.apiKey}`,
+    `${baseURL}?type=login&callback=${window.location.origin}&api_key=${OneIDV2.apiKey}`,
     "auth",
     `width=${width},height=${height},scrollbars=no,status=no,toolbar=no,menubar=no,location=no,resizable=no,dependent=no,dialog=no,top=${y}, left=${x}`
   );

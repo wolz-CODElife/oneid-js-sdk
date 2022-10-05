@@ -19,7 +19,7 @@ export function handleAuth() {
     let height = 600;
     const y = window.top.outerHeight / 2 + window.top.screenY - height / 2;
     const x = window.top.outerWidth / 2 + window.top.screenX - width / 2;
-    const w = window.open(`${baseURL}/auth?type=login&callback=${window.location.origin}&api_key=${OneIDV2.apiKey}`, "auth", `width=${width},height=${height},scrollbars=no,status=no,toolbar=no,menubar=no,location=no,resizable=no,dependent=no,dialog=no,top=${y}, left=${x}`);
+    const w = window.open(`${baseURL}?type=login&callback=${window.location.origin}&api_key=${OneIDV2.apiKey}`, "auth", `width=${width},height=${height},scrollbars=no,status=no,toolbar=no,menubar=no,location=no,resizable=no,dependent=no,dialog=no,top=${y}, left=${x}`);
     w === null || w === void 0 ? void 0 : w.focus();
     return new Promise((resolve, reject) => {
         const anotherInterval = setInterval(() => {
