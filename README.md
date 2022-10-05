@@ -18,7 +18,7 @@ For more information on OneID and its features, see [the documentation](https://
 # 🚀 Getting Started
 
 The easiest way to integrate the OneID SDK into your JavaScript project is through the [npm module](https://npmjs.org/oneid-sdk).
-However, if you want to use a pre-compiled file, you can fetch it from [unpkg](https://unpkg.com). The development version is available at [https://unpkg.com/browse/oneid-sdk@1.0.10/src/index.ts](https://unpkg.com/browse/oneid-sdk@1.0.10/src/index.ts).
+However, if you want to use a pre-compiled file, you can fetch it from [unpkg](https://unpkg.com). The development version is available at [https://unpkg.com/browse/oneid-sdk@1.0.11/src/index.ts](https://unpkg.com/browse/oneid-sdk@1.0.11/src/index.ts).
 
 # 📲 Installation
 You can easily install this package from NPM by running the following command in your terrminal:
@@ -28,7 +28,7 @@ $ npm install --save oneid-sdk
 
 Or including the script in your HTML file via UNPKG:
 ```HTML
-<script src="https://unpkg.com/browse/oneid-sdk@1.0.10/src/index.ts"></script>
+<script src="https://unpkg.com/browse/oneid-sdk@1.0.11/src/index.ts"></script>
 ```
 
 To use the npm modules for a browser based application, include it as you normally would:
