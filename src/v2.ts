@@ -21,8 +21,8 @@ class OneIDV2 {
 export const start = OneIDV2.start.bind(OneIDV2);
 
 export function handleAuth(): Promise<{ token: string; user: User }> {
-  let width = 700;
-  let height = 600;
+  let width = 720;
+  let height = 720;
   const y = window.top.outerHeight / 2 + window.top.screenY - height / 2;
   const x = window.top.outerWidth / 2 + window.top.screenX - width / 2;
   const w = window.open(
