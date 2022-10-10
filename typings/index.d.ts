@@ -1,24 +1,23 @@
-import SSO from "./lib/SSO";
-export * from "./v2";
-declare class OneId extends SSO {
-    static OneId: OneId;
-    /**
-     * Call this method to initialize all OneID instances.
-     *
-     * @param {object} options Your OneID API key and Redirect URL.
-     * @example OneId.start({ apiKey, siteDomain })
-     * @static
-     */
-    static start(options: {
-        /**
-         * Your OneID API key
-         */
-        apiKey: string;
-        /**
-         * Your site domain
-         */
-        siteDomain: string;
-    }): void;
+export declare const start: any;
+export declare function handleAuth(): Promise<{
+    token: string;
+    user: User;
+}>;
+export interface User {
+    _id: string;
+    username: string;
+    oneId: string;
+    email: string;
+    isVerified: boolean;
+    fullName?: string;
+    gender?: string;
+    dob?: string;
+    phone?: string;
+    maritalStatus?: string;
+    primaryAddress?: string;
+    secondaryAddress?: string;
+    country?: string;
+    postalCode?: string;
+    [key: string]: any;
 }
-export default OneId;
 //# sourceMappingURL=index.d.ts.map
