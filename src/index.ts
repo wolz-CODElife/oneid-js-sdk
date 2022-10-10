@@ -1,37 +1,82 @@
-import SSO from "./lib/SSO";
-export * from "./v2";
-class OneId extends SSO {
-  static OneId: OneId;
+const baseURL = "https://auth.oneidtech.com/auth";
 
-  /**
-   * Call this method to initialize all OneID instances.
-   *
-   * @param {object} options Your OneID API key and Redirect URL.
-   * @example OneId.start({ apiKey, siteDomain })
-   * @static
-   */
-  static start(options: {
-    /**
-     * Your OneID API key
-     */
-    apiKey: string;
-    /**
-     * Your site domain
-     */
-    siteDomain: string;
-  }) {
-    const { apiKey, siteDomain } = options;
-    if (!siteDomain) {
-      throw new Error(`OneId.start failed: siteDomain is required`);
-    }
+class OneID {
+  private static _apiKey: string;
+
+  static start({ apiKey }: { apiKey: string }) {
     if (!apiKey) {
-      throw new Error(`OneId.start failed: apiKey is required`);
+      throw new Error("apiKey is required");
     }
+    this._apiKey = apiKey;
+  }
 
-    this.initialize({ apiKey, siteDomain });
+  static get apiKey() {
+    if (!this._apiKey) {
+      throw new Error("apiKey is not set, please call start() first");
+    }
+    return this._apiKey;
   }
 }
 
-OneId.OneId = OneId;
+export const start = OneID.start.bind(OneID);
 
-export default OneId;
+export function handleAuth(): Promise<{ token: string; user: User }> {
+  let width = 760;
+  let height = 760;
+  const y = window.top.outerHeight / 2 + window.top.screenY - height / 2;
+  const x = window.top.outerWidth / 2 + window.top.screenX - width / 2;
+  const w = window.open(
+    `${baseURL}?type=login&callback=${window.location.origin}&api_key=${OneID.apiKey}`,
+    "auth",
+    `width=${width},height=${height},scrollbars=no,status=no,toolbar=no,menubar=no,location=no,resizable=no,dependent=no,dialog=no,top=${y}, left=${x}`
+  );
+  w?.focus();
+
+  return new Promise((resolve, reject) => {
+    const anotherInterval = setInterval(() => {
+      try {
+        let searchParams = new URLSearchParams(w?.location?.search);
+        if (searchParams.get("token") && searchParams.get("user")) {
+          let token = searchParams.get("token")!;
+          let userString = searchParams.get("user")!;
+          const user = JSON.parse(userString);
+          clearInterval(anotherInterval);
+          resolve({
+            token,
+            user,
+          });
+          w?.close();
+        }
+      } catch (e) {
+        // console.log(e);
+        // clearInterval(anotherInterval);
+      }
+    }, 300);
+
+    const interval = setInterval(() => {
+      if (w?.closed) {
+        clearInterval(anotherInterval);
+        clearInterval(interval);
+        return reject("window closed");
+      }
+    });
+  });
+}
+
+export interface User {
+  _id: string;
+  username: string;
+  oneId: string;
+  email: string;
+  isVerified: boolean;
+  fullName?: string;
+  gender?: string;
+  dob?: string;
+  phone?: string;
+  maritalStatus?: string;
+  primaryAddress?: string;
+  secondaryAddress?: string;
+  country?: string;
+  postalCode?: string;
+  [key: string]: any;
+}
